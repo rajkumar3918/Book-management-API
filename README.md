@@ -32,8 +32,11 @@ npm install
 Create a `.env` file in the root directory and define the following variables:
 
 ```
-MONGODB_URI=your_mongodb_uri
-CRYPTO_SECRET=your_crypto_secret
+MONGO_USER=<mongodb-userName>
+MONGO_PASS=<mongodb-password>
+MONGO_DB=<DB-name>
+PORT=<server-port>
+CRYPTO_SECRET=<qwe2345fg678bn9098cvbnjhas>
 ```
 
 4. Start the server:
