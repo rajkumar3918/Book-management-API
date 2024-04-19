@@ -24,7 +24,6 @@ git clone https://github.com/yourusername/user-management-service.git
 2. Install dependencies:
 
 ```bash
-cd user-management-service
 npm install
 ```
 
