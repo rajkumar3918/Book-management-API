@@ -1,4 +1,4 @@
-# User Management RESTful Service
+# Book Management RESTful Service
 
 This is a simple RESTful service built with Node.js and Express.js to manage user authentication and registration. The service allows users to register, log in, and retrieve user information.
 
