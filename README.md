@@ -157,6 +157,16 @@ Request Body:
 
 To delete a book from the collection, send a DELETE request to the `/books/:id` endpoint, where `:id` is the ID of the book to be deleted.
 
+graph TD;
+    A[Retrieve pending SMS messages] --> B[Find primary SMS gateway];
+    B --> C{Any primary gateway found?};
+    C -->|Yes| D[Loop through pending messages];
+    C -->|No| E[Throw error: Primary SMS setup not found];
+    D --> F[Send SMS message];
+    F -->|Success| G[Update SMS queue and SMS setup data];
+    F -->|Error| H[Update SMS queue and SMS setup data];
+
+
 **Delete Book Endpoint**:
 
 ```
